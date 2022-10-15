@@ -37,9 +37,12 @@ function CakeCard() {
             <img class="card-img-top" src={img} alt=""></img>
 
             <div className="card-body">
-              <div className="card-title">{cake.name}</div>
-              <div className="card-text">$ {cake.price}</div>
-              <div className="">{cake.description}</div>
+              {/* 商品名稱 */}
+              <div className="p-1">{cake.name}</div>
+              {/* 價格 */}
+              <div className="card-text">${cake.price}</div>
+              {/* 描述 */}
+              <div className="p-1 mb-1">{cake.description}</div>
               <a href="#" class="btn btn-outline-warning">
                 商品介紹
               </a>

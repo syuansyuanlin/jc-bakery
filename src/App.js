@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import CakeCard from "./components/CakeCard";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>APP.js</h1>
+      <Nav />
       <CakeCard />
     </div>
   );

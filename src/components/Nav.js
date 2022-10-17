@@ -8,12 +8,18 @@ function click(e) {
   }
 }
 
+function blur(e) {
+  if (e.target.nextElementSibling.style.display) {
+    e.target.nextElementSibling.style.display = null;
+  }
+}
+
 function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       {/* LOGO */}
       <a className="navbar-brand" href="#">
-        Navbar
+        ケーキ屋
       </a>
       <button
         className="navbar-toggler"
@@ -36,12 +42,12 @@ function Nav() {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Features
+              關於我們
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Pricing
+              訂單查詢
             </a>
           </li>
           <li className="nav-item dropdown">
@@ -54,19 +60,20 @@ function Nav() {
               aria-haspopup="true"
               aria-expanded="false"
               onClick={(e) => click(e)}
+              onBlur={(e) => blur(e)}
             >
-              Dropdown
+              商品一覽
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
-                Action
+                禮盒專區
               </a>
               <a className="dropdown-item" href="#">
-                Another action
+                蛋糕系列
               </a>
               <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                常溫甜點類
               </a>
             </div>
           </li>

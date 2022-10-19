@@ -38,15 +38,28 @@ function CakeCard() {
 
             <div
               className="card-body"
-              style={{ fontSize: 15, color: "rgb(89, 69, 69)" }}
+              style={{ fontSize: 14, color: "rgb(89, 69, 69)" }}
             >
               {/* 商品名稱 */}
-              <div className="p-1">{cake.name}</div>
+              <div
+                style={{ fontSize: 16, color: "rgb(70, 78, 46)" }}
+                className="p-1"
+              >
+                {cake.name}
+              </div>
               {/* 價格 */}
               <div className="card-text P-2">NT${cake.price}</div>
               {/* 描述 */}
               <div className="p-2 mb-1">{cake.description}</div>
-              <a href="#" class="btn btn-outline-warning">
+              <a
+                href="#"
+                style={{
+                  backgroundColor: "rgb(150, 126, 118)",
+                  fontSize: 14,
+                  color: "rgb(254, 251, 246)",
+                }}
+                class="btn btn-light"
+              >
                 加入購物車
               </a>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../images/cake logo.png";
 
 function click(e) {
   if (e.target.nextElementSibling.style.display) {
@@ -18,12 +19,8 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       {/* LOGO */}
-      <a
-        className="navbar-brand"
-        style={{ color: "rgb(238, 176, 176)" }}
-        href="#"
-      >
-        ✿ ✿ ケーキ屋
+      <a className="navbar-brand" style={{ color: "rgb(70, 78, 46)" }} href="#">
+        ケーキ屋
       </a>
       <button
         className="navbar-toggler"
@@ -36,16 +33,19 @@ function Nav() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+      <div
+        className="collapse navbar-collapse nav nav-pills nav-fill "
+        id="navbarNav"
+      >
+        <ul className="navbar-nav ">
           {/* 首頁 */}
-          <li className="nav-item active">
+          <li className="nav-item  ">
             <a
-              className="nav-link"
+              className="nav-link  "
               style={{ color: "rgb(85, 57, 57)" }}
               href="#"
             >
-              首頁 <span className="sr-only">(current)</span>
+              首頁 <span className="sr-only ">(current)</span>
             </a>
           </li>
           <li className="nav-item">

@@ -13,7 +13,7 @@ export const Cakeimages = () => {
         <div class="carousel-item active">
           <img
             src={img}
-            class="d-block w-90 rounded mx-auto d-block"
+            class="d-block w-95 rounded mx-auto d-block"
             alt="..."
           ></img>
         </div>

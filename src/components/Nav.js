@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../images/cake logo.png";
 
 function click(e) {
   if (e.target.nextElementSibling.style.display) {
@@ -40,29 +39,17 @@ function Nav() {
         <ul className="navbar-nav ">
           {/* 首頁 */}
           <li className="nav-item  ">
-            <a
-              className="nav-link  "
-              style={{ color: "rgb(85, 57, 57)" }}
-              href="#"
-            >
+            <a className="nav-link  " style={{ color: "rgb(85, 57, 57)" }} href="/home">
               首頁 <span className="sr-only ">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a
-              className="nav-link"
-              style={{ color: "rgb(85, 57, 57)" }}
-              href="#"
-            >
+            <a className="nav-link" style={{ color: "rgb(85, 57, 57)" }} href="/about">
               關於我們
             </a>
           </li>
           <li className="nav-item">
-            <a
-              className="nav-link"
-              style={{ color: "rgb(85, 57, 57)" }}
-              href="#"
-            >
+            <a className="nav-link" style={{ color: "rgb(85, 57, 57)" }} href="/order">
               訂單查詢
             </a>
           </li>
@@ -96,6 +83,9 @@ function Nav() {
           </li>
         </ul>
       </div>
+      <ul className={'navbar-nav'} style={{position: 'relative', right: '0%', bottom: '-20%'}}>
+        <li className="nav-item"><a href={'/login'}>登入</a></li>
+      </ul>
     </nav>
   );
 }

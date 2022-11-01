@@ -11,17 +11,13 @@ export const Cakeimages = () => {
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            src={img}
-            class="d-block w-95 rounded mx-auto d-block"
-            alt="..."
-          ></img>
+          <img src={img} className="d-block w-95 rounded mx-auto d-block" alt="..."></img>
         </div>
         <div class="carousel-item">
-          <img src={img} class="d-block w-90" alt="..."></img>
+          <img src={img} className="d-block w-90" alt="..."></img>
         </div>
         <div class="carousel-item">
-          <img src={img} class="d-block w-90" alt="..."></img>
+          <img src={img} className="d-block w-90" alt="..."></img>
         </div>
       </div>
     </div>

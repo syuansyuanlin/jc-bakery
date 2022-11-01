@@ -1,4 +1,3 @@
-import { Carousel } from "bootstrap";
 import "./App.css";
 import CakeCard from "./components/CakeCard";
 import Nav from "./components/Nav";

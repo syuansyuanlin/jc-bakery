@@ -6,30 +6,28 @@ const cakes = [
     price: "300",
     description:
       "大量使用英國TWININGS伯爵茶葉，細心地萃取茶葉精華，將色澤、香氣與口感完美融合。",
-    img: '/images/cake1.jpg',
   },
   {
     name: "巧克力戚風蛋糕",
     price: "500",
     description:
       "上選優質高純度巧克力製作，口味、香味、風味兼具的絕讚品，是小朋友們都愛不釋手的招牌口味。",
-    img: '/images/cake2.jpg',
   },
   {
     name: "草莓戚風蛋糕",
     price: "400",
     description:
       "將法國進口的新鮮果泥逐漸融入蛋糕中，在夢幻的粉紅色澤下，給您繽紛的甜蜜滋味。",
-    img: '/images/cake3.jpg',
   },
   {
     name: "抹茶戚風蛋糕",
     price: "600",
     description:
       "採用日本丸久小山園抹茶粉，茶香濃厚、香醇不苦，入口即感受滿滿茶香的感動。",
-    img: '/images/cake4.jpg',
   },
 ];
+
+const images = require.context('../../public/images', true);
 
 function CakeCard() {
   return (
@@ -37,7 +35,7 @@ function CakeCard() {
       <ul className="row">
         {cakes.map((cake, index) => (
           <li key={cake.name} className="card col m-1 p-1">
-            <img class="card-img-top" src={cake.img} alt=""></img>
+            <img className="card-img-top" src={images(`./cake${index + 1}.jpg`)} alt=""></img>
 
             <div className="card-body" style={{ fontSize: 14, color: "rgb(89, 69, 69)" }}>
               {/* 商品名稱 */}

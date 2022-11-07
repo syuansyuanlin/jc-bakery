@@ -1,0 +1,21 @@
+/* 清除瀏覽器預設邊距，
+使邊框和內邊距的值包含在元素的width和height內 */
+//
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+// body {
+//   background-color: #ffe1e1;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+.login {
+  width: 600px;
+  height: 400px;
+  background-color: FFB9B9;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}

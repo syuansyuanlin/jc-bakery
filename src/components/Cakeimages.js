@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/ケーキ屋.gif";
+import img from "../images/552.png";
 
 export const Cakeimages = () => {
   return (
@@ -11,7 +11,11 @@ export const Cakeimages = () => {
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src={img} className="d-block w-95 rounded mx-auto d-block" alt="..."></img>
+          <img
+            src={img}
+            className="d-block w-95 rounded mx-auto d-block"
+            alt="..."
+          ></img>
         </div>
         <div class="carousel-item">
           <img src={img} className="d-block w-90" alt="..."></img>

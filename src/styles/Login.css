@@ -1,4 +1,26 @@
 @charset "UTF-8";
 /* 清除瀏覽器預設邊距，
 使邊框和內邊距的值包含在元素的width和height內 */
-/*# sourceMappingURL=Login.css.map */
+.login {
+  width: 600px;
+  height: 400px;
+  background-color: FFB9B9;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.inner {
+  display: flex;
+  /* 水平置中 */
+  justify-content: center;
+  /* 垂直置中 */
+  align-content: center;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=Login.css.map */

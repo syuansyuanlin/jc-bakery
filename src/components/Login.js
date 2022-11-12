@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/Login.css";
+
 export default class Login extends React.Component {
   render() {
     return (
-      <div className="login">
+      <div className="login center inner">
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">

@@ -1,14 +1,14 @@
 import "./App.css";
 import CakeCard from "./components/CakeCard";
 import Nav from "./components/Nav";
-import { Cakeimages } from "./components/Cakeimages";
+import Carousel from "./components/Carousel";
 import Cardfooter from "./components/Cardfooter";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Cakeimages />
+      <Carousel />
       <CakeCard />
       <Cardfooter />
     </div>
